@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="family-header">
+        <h1>Meet My Family</h1>
+        <p>Here are the amazing people who make up my family!</p>
+    </header>
+    <section class="family-grid">
+        <div class="family-member">
+            <div class="card">
+                <div class="card-front">
+                    <img src="pics/papa.jpg" alt="ERPATS">
+                    <h2>ERPATS</h2>
+                </div>
+                <div class="card-back">
+                    <p>HALIGI SA BALAY</p>
+                </div>
+            </div>
+        </div>
+        <div class="family-member">
+            <div class="card">
+                <div class="card-front">
+                    <img src="pics/mama.jpg" alt="ERMATS">
+                    <h2>ERMATS</h2>
+                </div>
+                <div class="card-back">
+                    <p>SUGA SA BALAY</p>
+                </div>
+            </div>
+        </div>
+        <div class="family-member">
+            <div class="card">
+                <div class="card-front">
+                    <img src="pics/krisan.jpg" alt="ATE1">
+                    <h2>ATE1</h2>
+                </div>
+                <div class="card-back">
+                    <p>AMBOT</p>
+                </div>
+            </div>
+        </div>
+        <div class="family-member">
+            <div class="card">
+                <div class="card-front">
+                    <img src="pics/bhea.jpg" alt="ATE2">
+                    <h2>ATE2</h2>
+                </div>
+                <div class="card-back">
+                    <p>AMBOT</p>
+                </div>
+            </div>
+        </div>
+        <div class="family-member">
+            <div class="card">
+                <div class="card-front">
+                    <img src="pics/kuya.jpg" alt="BrotherInLaw">
+                    <h2>Brother-in-Law</h2>
+                </div>
+                <div class="card-back">
+                    <p>AMBOT</p>
+                </div>
+            </div>
+        </div>
+        <div class="family-member">
+            <div class="card">
+                <div class="card-front">
+                    <img src="pics/kayden.jpg" alt="GUMANGKON">
+                    <h2>Kayden</h2>
+                </div>
+                <div class="card-back">
+                    <p>AMONG BB</p>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <script>
+        document.querySelectorAll('.family-member').forEach(member => {
+            member.addEventListener('click', () => {
+                member.classList.toggle('flipped'); 
+            });
+        });
+    </script>
+</body>
+</html>
